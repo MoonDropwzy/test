@@ -1,0 +1,112 @@
+body{
+    font-weight: bolder;
+    font-family: 宋体;
+    margin: 20px auto;
+    padding: 0;
+    width: 1152px;
+    height: 648px;
+    background: url("../images/suoping.jpg") no-repeat center;
+}
+.bo{
+    position: relative;
+    width: 1152px;
+    height: 648px;
+    backdrop-filter: blur(10px);
+}
+section{
+    background: url("../images/title.jpg");
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    border-radius: 50%;
+    top: 150px;
+    left: 526px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+.adm{
+    position: absolute;
+    font-size: 60px;
+    top: 300px;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    background-image: -webkit-linear-gradient(left,rgb(10, 152, 246),rgb(255, 0, 43),rgb(9, 250, 109));
+    left: 400px;
+}
+.bo .logn{
+    border-radius: 15px;
+    position: absolute;
+    top: 380px;
+    left: 520px;
+    text-align: center;
+    line-height: 45px;
+    width: 150px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.383);
+    font-size: 30px;
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.589);
+}
+.bo>.logn:hover{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.589);
+}
+span{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: -1800px;
+    top: 950px;
+
+}
+.sdt{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    height: 60px;
+    width: 60px;
+}
+.sdt>:first-child{
+    list-style: none;
+    height: 200px;
+    background: url("../images/shutdown.png") no-repeat top;
+    background-size: 100%;
+}
+.er{
+    display: none;
+    background-color: rgba(240, 255, 240, 0.465);
+    list-style: none;
+    font-size: 20px;
+    width: 100px;
+    position: absolute;
+    right: 60px;
+    border-radius: 10px;
+    bottom: -10px;
+    padding: 0;
+}
+.er>li{
+    text-align: center;
+    line-height: 40px;
+}
+.er>li:hover{
+    color: indigo;
+    background-color: ivory;
+}
+.er>li:nth-child(1):hover{
+    border-radius: 10px 10px 0 0;
+}
+.er>li:nth-child(3):hover{
+    border-radius: 0 0 10px 10px;
+}
+.er>li>a{
+    text-decoration: none;
+    color: rgba(56, 56, 56, 0.959);
+    font-weight: bolder;
+}
+.fi:hover{
+    cursor: pointer;
+}
+.fi:hover>li>.er{
+    display: block;
+}

@@ -1,0 +1,199 @@
+section{
+    background: rgba(133, 126, 121, 0.308);
+    width: 700px;
+    margin: 100px auto;
+    min-height: 600px;
+    border-radius: 10px;
+}
+header{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.total{
+    margin: 0 auto;
+    min-height: 400px;
+    display: flex;
+    flex-flow: column;
+}
+.total>div{
+    flex: 1;
+    margin: 5px 20px;
+    background: white;
+}
+.head{
+    position: relative;
+    height: 340px;
+}
+.bo{
+    background: orange;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+}
+.top{
+    padding: 25px;
+    display: flex;
+    flex-flow: column;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+}
+.de{
+    color: orange;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+.top>.to{
+    height: 180px;
+    width: 180px;
+    border-radius: 25%;
+    border: 3px red solid;
+    background: url("../images/tou.jpg") no-repeat top;
+}
+.bo>:first-child{
+    border-right: 3px rgb(252, 252, 253) solid;
+}
+.bo>div{
+    margin-top: 5px;
+    line-height: 25px;
+    height: 50px;
+    color: white;
+    flex: 1;
+}
+.inpu{
+    position: relative;
+    max-height: 300px;
+}
+.infoma{
+    position: relative;
+    max-height: 240px;
+}
+.inpu>ul li{
+    height: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    list-style: none;
+}
+ul{
+    padding: 10px 10px;
+}
+input{
+    border: none;
+    outline: medium;
+    font-size: 18px;
+    height: 60px;
+}
+.inpu>ul li:nth-child(1),.inpu>ul li:nth-child(2){
+    border: 4px rgba(194, 183, 183, 0.657) solid;
+}
+.s{
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    min-height: 60px;
+    background: orange;
+}
+.infoma>ul li{
+    padding: 0;
+    background: orange;
+}
+.inpu>ul li>i{
+    border-right: rgba(194, 183, 183, 0.657) 4px solid;
+}
+.inpu>ul li>.fa{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: orange;
+}
+.inpu>ul li:nth-child(2)>.fa{
+    font-size: 45px;
+}
+.infoma>ul li{
+    border-bottom: 2px gray solid;
+    height: 60px;
+    font-weight: bolder;
+    color: white;
+    line-height: 60px;
+    list-style: none;
+    background: orange;
+}
+.infoma>ul li:hover{
+    background: rgba(220, 20, 20, 0.883);
+}
+.infoma>ul{
+    margin: 0;
+    padding: 0;
+}
+.infoma>ul li >i{
+    margin-left: 20px;
+}
+.infoma>ul li >a{
+    margin: 20px 0;
+    padding: 0 8px;
+    border-radius: 5px;
+    position: absolute;
+    right: 40px;
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    background: rgb(35, 42, 77);
+}
+.foter{
+    position: relative;
+    top: -100px;
+    background-color: rgb(243, 209, 239);
+    height: 100px;
+    margin: 0 auto;
+    max-width: 700px;
+    border-radius: 0 0 10px 10px;
+}
+.foter ul{  
+    display:flex;
+}
+.foter ul li{
+    list-style: none;
+    margin: 5px;
+    height: 50px;
+    float: left;
+    width: 25%;
+    line-height: 50px;
+    text-align: center;
+}
+.foter ul li a:hover{
+    color: white;
+}
+.foter ul li a{
+    color: white;
+    position: relative;
+    top: -5px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+@media (max-width:730px) {
+    section{
+        background: rgba(133, 126, 121, 0.308);
+        max-width: 500px;
+        margin: 100px auto;
+        height: 1200px;
+        border-radius: 10px;
+    }
+    .total{
+        margin: 0 auto;
+        max-width: 400px;
+        display: flex;
+        flex-flow: column;
+    }
+    .foter{
+        max-width: 500px;
+    }
+}

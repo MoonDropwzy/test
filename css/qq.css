@@ -1,0 +1,141 @@
+*{
+    font-family: 微软雅黑;
+    font-weight: bolder;
+}
+section{
+    float: left;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 10px grey;
+    backdrop-filter: blur(5px);
+}
+div{
+    width: 808px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#logn{
+    border-radius: 20px 0 0 20px;
+    border-right: rgb(27, 233, 233) 2px solid;
+}
+#sign{
+    border-radius: 0 20px 20px 0;
+    border-left: rgb(27, 233, 233) 2px solid;
+}
+#gsb{position: absolute;
+    font-size: 1.2em;
+    color: rgb(250, 246, 246);
+    background-color: rgb(238, 105, 255);
+    border-radius: 10px;
+    margin-top: 60%;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+}
+#sb{
+    display: none;
+    position: absolute;
+    font-size: 1.2em;
+    color: rgb(250, 246, 246);
+    background-color: rgb(238, 105, 255);
+    border-radius: 10px;
+    top: 75%;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+}
+aside{
+    position: relative;
+    top: 200px;
+    margin-left: 40px;
+    height: 50px;
+}
+#sign>form>aside{
+    display: none;
+    position: relative;
+    top: 50px;
+    margin-left: 40px;
+    height: 50px;
+}
+.fa{
+    font-size: 20px;
+    color: rgb(126, 131, 126);
+}
+.fa-lock{
+    font-size: 30px;
+}
+footer>a{
+    float: right;
+    top: 10px;
+    position: relative;
+    margin-right: 10px;
+}
+img{
+    border-radius: 50%;
+}
+nav img{
+    border-radius: 0;
+    left: 33%;
+    top: 25%;
+    position: absolute;
+    display: none;
+}
+header{
+    top: 10%;
+    left: 30%;
+    position: absolute;
+}
+.fa-qrcode{
+    font-size: 50px;
+}
+#lb{
+    font-size: 1.2em;
+    color: rgb(248, 246, 246);
+    background-color: rgb(37, 199, 248);
+    border-radius: 10px;
+    margin-top: 50%;
+    margin-left: 25%;
+    width: 200px;
+    height: 40px;
+}
+#back{
+    display: none;
+    font-size: 1.2em;
+    color: rgb(248, 246, 246);
+    background-color: rgb(37, 199, 248);
+    position: absolute;
+    border-radius: 10px;
+    top: 75%;
+    left: 25%;
+    width: 200px;
+    height: 40px;
+}
+#go{
+    display: none;
+    font-size: 1.2em;
+    color: rgb(248, 246, 246);
+    background-color: rgb(37, 199, 248);
+    position: absolute;
+    border-radius: 10px;
+    top: 60%;
+    left: 25%;
+    width: 200px;
+    height: 40px;
+}
+input{
+    background: rgba(255, 255, 255, 0.164);
+    width: 60%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: rgba(128, 128, 128, 0.411) 1px solid;
+}
+input:focus{
+    color: rgb(17, 205, 252);
+    border-bottom: rgb(17, 205, 252) 3px solid;
+}
+#lb:hover,#back:hover,#sb:hover,#go:hover,#gsb:hover{
+    background: rgb(48, 226, 250);
+}

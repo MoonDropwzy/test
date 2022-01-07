@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ登录</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/qq.css">
+    <script type="text/javascript" src="../js/qq.js"></script>
+</head>
+<body>
+<div>  
+    <section id="logn">
+        <nav>
+            <i class="fa fa-qq" style="position: absolute; top: 10px; left: 10px;
+            font-size: 30px; color: aliceblue;">&nbsp;&nbsp;QQ</i>
+        </nav>
+        <nav>
+            <img src="../images/codelogn.png" alt="" id="codeimg">
+        </nav>
+        <header id="mmlogn">
+            <img src="../images/title.jpg" alt="" width="50%">
+        </header>
+        <form action="" method="get">
+        <aside id="mmlogn1">
+            <i class="fa fa-qq"></i>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="账号/手机号" name="" id="lt" onblur="check()"><span id="lts"></span>
+        </aside>
+        <aside id="mmlogn2">
+            <i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密码" name="" id="lp" onblur="check()"><span id="lps"></span>
+        </aside>
+        </form>
+        <button id="lb" onclick="check()">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+        <button id="back" onclick="back()">返&nbsp;&nbsp;&nbsp;&nbsp;回</button>
+        <button id="go" onclick="gosign()">去&nbsp;登&nbsp;录</button>
+        <footer>
+            <a href="#" id="code" onclick="codelogn()"><i class="fa fa-qrcode"></i></a>
+        </footer>
+    </section> 
+    <section id="sign">
+        <form action="" method="get">
+        <aside id="mmsign1">
+            <i class="fa fa-qq"></i>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="账号/手机号" name="" id="st" onblur="check()"><span id="sts"></span>
+        </aside>
+        <aside id="mmsign2">
+            <i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;<input type="password" placeholder="密码" name="" id="sp" onblur="check()"><span id="sps"></span>
+        </aside>
+        <aside id="mmsign3">
+            <i class="fa fa-lock"></i>&nbsp;&nbsp;&nbsp;<input type="password" placeholder="确认密码" name="" id="sp1" onblur="check()"><span id="sps1"></span>
+        </aside>
+        <button type="button" id="gsb" onclick="sign()">没有账号?点我注册</button>
+        <button type="button" id="sb" onclick="check()">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+        </form>
+    </section>
+</div> 
+</body>
+</html>

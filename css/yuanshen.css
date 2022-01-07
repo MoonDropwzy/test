@@ -1,0 +1,148 @@
+section ul li{
+    left: 80px;
+    list-style: none;
+    position: absolute;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
+ul{
+    margin: 15px auto;
+}
+section{
+    padding: 0;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+ul li:nth-child(1){ 
+    animation: yuanshen1 30s ;
+}
+ul li:nth-child(2){ 
+    animation: yuanshen2 30s ;
+}
+ul li:nth-child(3){ 
+    animation: yuanshen3 30s ;
+}
+ul li:nth-child(4){ 
+    animation: yuanshen4 30s ;
+}
+ul li:nth-child(5){ 
+    animation: yuanshen5 30s ;
+}
+ul li:nth-child(6){ 
+    animation: yuanshen6 30s ;
+}
+@keyframes yuanshen1{
+    0%{
+        opacity: 0;
+    }
+    8.4%{
+        opacity: 1;
+    }
+    16.7%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yuanshen2{
+    0%{
+        opacity: 0;
+    }
+    16.7%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    33.4%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yuanshen3{
+    0%{
+        opacity: 0;
+    }
+    33.4%{
+        opacity: 0;
+    }
+    41.8%{
+        opacity: 1;
+    }
+    50.1%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yuanshen4{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    58.4%{
+        opacity: 1;
+    }
+    66.8%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yuanshen5{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    66.8%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    83.2%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes yuanshen6{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    83.2%{
+        opacity: 0;
+    }
+    92%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
