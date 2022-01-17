@@ -1,3 +1,6 @@
+function closes() {
+    document.getElementById('qq').contentWindow.location.reload(true);
+}
 function play(){
     document.getElementById('music1').pause()
     document.getElementById('music1').currentTime=0
@@ -17,7 +20,7 @@ function clos1(){
     document.getElementById('music1').pause()
     document.getElementById('music1').currentTime=0
 } 
-function close(){
+function narrow(){
     document.getElementById('baidu').style.display='none';
 }
 function stop(){
