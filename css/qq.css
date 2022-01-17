@@ -16,6 +16,26 @@ div{
     margin: 0 auto;
     border-radius: 20px;
 }
+#after{
+    display: none;
+    width: 300px;
+    margin: 10px;
+    position: absolute;
+    top: -543px;
+    left: 40%;
+    animation: qq 1s forwards;
+}
+@keyframes qq {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(543px);
+    }
+}
+#after>img{
+    border-radius: 0%;
+}
 #logn{
     border-radius: 20px 0 0 20px;
     border-right: rgb(27, 233, 233) 2px solid;
