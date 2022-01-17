@@ -1,15 +1,6 @@
 function check(){
     var G= document.getElementById('lt').value;
     var g= document.getElementById('st').value;
-    if (G!=''&G==g){
-        document.getElementById('lts').innerHTML="<font color='green' size='2px'>✔</font>";
-    }
-    if (G!=''){
-        document.getElementById('lts').innerHTML="<font color='green' size='2px'>✔</font>";
-    }
-    if (G==''){
-        document.getElementById('lts').innerHTML="<font color='red' size='2px'>✘账号不为空</font>";
-    };
     if (g !=""){
         document.getElementById('sts').innerHTML="<font color='green' size='2px'>✔</font>";
     }
@@ -20,19 +11,8 @@ function check(){
     var f= document.getElementById('sp').value;
     var d= document.getElementById('sp1').value;
     var F= document.getElementById('lp').value;
-    if (F!=''&F==d){
-        document.getElementById('lps').innerHTML="<font color='green' size='2px'>✔</font>";
-    }
     if (F==''){
         document.getElementById('lps').innerHTML="<font color='red' size='2px'>✘密码不为空</font>";
-    }
-    if (f !=""&d!=''&f==d){
-        document.getElementById('sps').innerHTML="<font color='green' size='2px'>✔</font>";
-        document.getElementById('sps1').innerHTML="<font color='green' size='2px'>✔</font>";
-    }
-    if (f !=""&d!=''&f!=d){
-        document.getElementById('sps').innerHTML="<font color='red' size='2px'>✘密码不一致</font>";
-        document.getElementById('sps1').innerHTML="<font color='red' size='2px'>✘密码不一致</font>";
     }
     if (f ==""){
         document.getElementById('sps').innerHTML="<font color='red' size='2px'>✘密码不为空</font>";
@@ -44,6 +24,43 @@ function check(){
         document.getElementById('lps').innerHTML="<font color='red' size='2px'>✘密码错误!</font>";
     }
 
+}
+function lcheck(){
+    var G= document.getElementById('lt').value;
+    if (G==''){
+        document.getElementById('lts').innerHTML="<font color='red' size='2px'>✘账号不为空</font>";
+    }
+    else{
+        document.getElementById('lts').innerHTML="<font color='red' size='2px'></font>";
+    }
+    var d= document.getElementById('sp1').value;
+    var F= document.getElementById('lp').value;
+    if (F==''){
+        document.getElementById('lps').innerHTML="<font color='red' size='2px'>✘密码不为空</font>";
+    }
+    if(G!=''&F!=''&F!=d){
+        document.getElementById('lps').innerHTML="<font color='red' size='2px'>✘密码错误!</font>";
+    }
+    if (F!=''&F==d){
+        document.getElementById('lps').innerHTML="<font color='green' size='2px'></font>";
+        setTimeout("alert('登录成功!')",0)
+        document.getElementById('ma').style.display="none";
+        document.getElementById('after').style.display="block";
+    }
+    
+}
+function scheck(){
+    var f= document.getElementById('sp').value;
+    var d= document.getElementById('sp1').value;
+    if (f !=''&d!=''&f==d){
+        document.getElementById('sps').innerHTML="<font color='green' size='2px'>✔</font>";
+        document.getElementById('sps1').innerHTML="<font color='green' size='2px'>✔</font>";
+        setTimeout("alert('注册成功!')",0)
+    }
+    if (f !=""&d!=''&f!=d){
+        document.getElementById('sps').innerHTML="<font color='red' size='2px'>✘密码不一致</font>";
+        document.getElementById('sps1').innerHTML="<font color='red' size='2px'>✘密码不一致</font>";
+    }
 }
 function codelogn(){
     document.getElementById('mmlogn').style.display='none';
