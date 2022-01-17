@@ -3,12 +3,12 @@ body{
     padding: 0;
     width: 1152px;
     height: 648px;
-    background: url("../images/background.jpg") no-repeat center;
 }
 .bo{
     position: relative;
     width: 1152px;
     height: 648px;
+    background: url("../images/background.jpg") no-repeat;
 }
 nav{
     height: 40px;
