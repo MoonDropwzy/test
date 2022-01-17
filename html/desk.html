@@ -38,7 +38,7 @@
                     <span>必应</span>
                     <iframe src="./gg.html" frameborder="0" id="baidu"></iframe>
                 </a>
-                <a href="#" id="close" onclick="close()"><button type="button" id="small"><i class="fa fa-times-circle"></i></button><br><br></i></a>
+                <a href="#" id="close" onclick="narrow()"><button type="button" id="small"><i class="fa fa-times-circle"></i></button><br><br></i></a>
             <li>
                 <a href="#ys" id="ys" onclick="play()">
                     <audio src="../music/天动万象.mp3" id="music" loop></audio>
@@ -53,12 +53,13 @@
                     <img src="../images/chilun.png" alt="" width="100%">
                     <span>系统设置</span></a></li>
             <li>
-                <a href="#qql" id="qql" onclick="stop()">
+                <a href="#qql" id="qql" onclick="closes()">
                     <img src="../images/qq.png" alt="" width="100%">
                     <span>腾讯QQ</span>
                     <iframe src="./qq.html" frameborder="0" id="qq" scrolling="no"></iframe>
                 </a>
-                <a href="#" id="close" onclick="close()" style="top:-250px;position: relative;"><button type="button" id="small"><i class="fa fa-times-circle"></i></button><br><br></i></a>
+                <a href="#" id="close" onclick="close()" style="top:-250px;position: relative;"><button type="button" id="narrow"><i class="fa fa-times-circle"></i></button><br><br></i></a>
+                <a href="#" id="close" onclick="narrow()" style="top:-250px;position: relative;"><button type="button" id="small"><i class="fa fa-minus-circle"></i></button><br><br></i></a>
             </li>
             <li><a href="#bl" id="bl" onclick="play1()">
                 <audio src="../music/所爱隔山海-CMJ.mp3" loop id="music1"></audio>
